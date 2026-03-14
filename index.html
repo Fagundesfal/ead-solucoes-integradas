@@ -142,8 +142,8 @@ section{padding:100px 0}
 .ccard-label svg{width:12px;height:12px}
 .ccard-value{font-size:14px;font-weight:600;color:#fff}
 .ccard-full{grid-column:span 2}
-.map-frame{width:100%;height:220px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
-..map-frame iframe{width:100%;height:100%;border:none;filter:none;max-width:100%;display:block} hue-rotate(180deg) brightness(0.9)}
+.map-frame{width:100%;height:220px;border-radius:12px;overflow:hidden;border:1px solid var(--border);position:relative;isolation:isolate}
+.map-frame iframe{width:100%;height:100%;border:none;filter:none;max-width:100%;display:block} hue-rotate(180deg) brightness(0.9)}
 .form-box{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:36px}
 .form-box h3{font-size:20px;font-weight:700;margin-bottom:28px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
