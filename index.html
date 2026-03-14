@@ -410,6 +410,7 @@ function enviarFormulario(){
   if(!nome||!msg){alert('Preencha pelo menos o nome e a mensagem.');return;}
   const texto=`Olá! Vim pelo site da EAD Soluções Integradas.%0A%0ANome: ${encodeURIComponent(nome)}%0AEmail: ${encodeURIComponent(email)}%0ATelefone: ${encodeURIComponent(tel)}%0AMensagem: ${encodeURIComponent(msg)}`;
   window.open(`https://wa.me/5511994293041?text=${texto}`,'_blank');
+window.location.href=`mailto:contato@eadseguranca.com.br?subject=Contato pelo site - ${encodeURIComponent(nome)}&body=${texto.replace(/%0A/g,'%0D%0A')}`;
 }
 const modalData={
   monitoramento:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',title:'Monitoramento de Alarme 24h',body:'<p>Nossa central de monitoramento opera 24 horas por dia, 7 dias por semana, garantindo vigilância contínua do seu patrimônio. Com tecnologia de ponta e equipe altamente treinada, respondemos a qualquer ocorrência de forma imediata.</p><p>Ao detectar qualquer anomalia, nossa equipe aciona os protocolos de segurança e, quando necessário, entra em contato com as autoridades competentes e com o cliente.</p>',tags:['Central própria','Resposta imediata','Equipe 24h','Tecnologia avançada','Protocolo de emergência']},
