@@ -13,7 +13,7 @@ body{background:var(--bg);color:#fff;font-family:'Sora',sans-serif;overflow-x:hi
 img{display:block}a{text-decoration:none;color:inherit}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--blue)}
 .container{max-width:var(--max);margin:0 auto;padding:0 24px}
-nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:68px}
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.97);border-bottom:1px solid var(--border);height:68px}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-text .l1{font-size:20px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1.1}
@@ -32,7 +32,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.9
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
 .hero{padding-top:68px}
-.hero-img{width:100%;height:75vh;object-fit:cover;object-position:center 30%;display:block}
+.hero-img{width:100%;height:65vh;object-fit:cover;object-position:center 40%;display:block}
 .hero-content{max-width:var(--max);margin:0 auto;padding:60px 24px 0}
 .hero-label{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .hero-label::before{content:'';display:block;width:24px;height:2px;background:var(--blue)}
@@ -72,7 +72,7 @@ section{padding:100px 0}
 .scard:hover{transform:translateY(-6px);border-color:rgba(26,107,255,.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
 .scard-img-wrap{position:relative;overflow:hidden}
 .scard-img{width:100%;height:240px;object-fit:cover;display:block}
-.scard-num{position:absolute;top:16px;left:16px;background:rgba(13,13,18,0.8);backdrop-filter:blur(8px);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--blue);border:1px solid var(--border)}
+.scard-num{position:absolute;top:16px;left:16px;background:rgba(13,13,18,0.8);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--blue);border:1px solid var(--border)}
 .scard-body{padding:24px}
 .scard-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .scard-title svg{color:var(--blue);flex-shrink:0;width:18px;height:18px}
@@ -85,7 +85,7 @@ section{padding:100px 0}
 .scard-link:hover{gap:10px}
 .servicos-cta{text-align:center;margin-top:48px}
 .servicos-cta p{font-size:15px;color:var(--muted);margin-bottom:16px}
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center;padding:24px}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:1000;align-items:center;justify-content:center;padding:24px}
 .modal-overlay.open{display:flex}
 .modal-box{background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px;max-width:560px;width:100%;position:relative;max-height:80vh;overflow-y:auto}
 .modal-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,0.08);border:none;color:#fff;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
@@ -137,9 +137,8 @@ section{padding:100px 0}
 .ccard-label svg{width:12px;height:12px}
 .ccard-value{font-size:14px;font-weight:600;color:#fff}
 .ccard-full{grid-column:span 2}
-.map-frame{width:100%;height:220px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
-.map-frame iframe{width:100%;height:100%;border:none}
-.map-link{display:none;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:600;font-size:14px;margin-top:14px}
+.map-frame{display:none}
+.map-link{display:flex;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:600;font-size:14px;margin-top:14px;gap:10px}
 .form-box{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:36px}
 .form-box h3{font-size:20px;font-weight:700;margin-bottom:28px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -217,8 +216,6 @@ section{padding:100px 0}
   .contact-info-grid{grid-template-columns:1fr}
   .ccard-full{grid-column:auto}
   .form-row{grid-template-columns:1fr}
-  .map-frame{display:none}
-  .map-link{display:flex}
   .footer-main{grid-template-columns:1fr;gap:28px;padding:36px 16px}
   .footer-bottom{flex-direction:column;gap:10px;text-align:center;padding:16px}
   .footer-bottom-links{flex-wrap:wrap;justify-content:center}
@@ -281,7 +278,7 @@ section{padding:100px 0}
       </div>
       <div class="hero-meta-item">
         <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        @ead_segurancaetecnologia
+        @eadsi_
       </div>
     </div>
   </div>
@@ -363,11 +360,10 @@ section{padding:100px 0}
         <div class="contact-info-grid">
           <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Telefone</div><div class="ccard-value">(11) 99429-3041</div></div>
           <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Endereço</div><div class="ccard-value">Av. Carmine Gragnano, 150 - Centro, Jandira SP</div></div>
-          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</div><div class="ccard-value">@ead_segurancaetecnologia</div></div>
+          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</div><div class="ccard-value">@eadsi_</div></div>
           <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</div><div class="ccard-value">contato@eadseguranca.com.br</div></div>
           <div class="ccard ccard-full"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Horário</div><div class="ccard-value">Atendimento 24 horas</div></div>
         </div>
-        <div class="map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.0!2d-46.9014!3d-23.5290!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Carmine+Gragnano%2C+150+-+Centro%2C+Jandira+-+SP!5e0!3m2!1spt-BR!2sbr!4v1" loading="lazy"></iframe></div>
         <a href="https://maps.google.com/?q=Av.+Carmine+Gragnano,+150,+Jandira,+SP" target="_blank" class="map-link">📍 Ver no Google Maps</a>
       </div>
       <div class="form-box">
@@ -393,14 +389,14 @@ section{padding:100px 0}
       <div class="footer-divider"></div>
       <p>Segurança significa preservar sua vida e seus negócios. Tecnologia de ponta e agentes experientes.</p>
       <div class="socials">
-        <a href="https://instagram.com/ead_segurancaetecnologia" class="social-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5" class="social-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
         <a href="mailto:contato@eadseguranca.com.br" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
         <a href="tel:11994293041" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
       </div>
     </div>
     <div class="footer-col"><h4>Navegação</h4><ul><li><a href="#inicio">Home</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#contato">Contato</a></li></ul></div>
     <div class="footer-col"><h4>Serviços</h4><ul><li><a href="#servicos">Monitoramento 24h</a></li><li><a href="#servicos">CFTV</a></li><li><a href="#servicos">Portaria</a></li><li><a href="#servicos">Pós-Obra</a></li><li><a href="#servicos">Limpeza</a></li></ul></div>
-    <div class="footer-col"><h4>Contato</h4><ul><li><a href="tel:11994293041">(11) 99429-3041</a></li><li><a href="#">Av. Carmine Gragnano, 150</a></li><li><a href="#">Centro - Jandira, SP</a></li><li><a href="#">@ead_segurancaetecnologia</a></li></ul></div>
+    <div class="footer-col"><h4>Contato</h4><ul><li><a href="tel:11994293041">(11) 99429-3041</a></li><li><a href="#">Av. Carmine Gragnano, 150</a></li><li><a href="#">Centro - Jandira, SP</a></li><li><a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5">@eadsi_</a></li></ul></div>
   </div>
   <div class="footer-bottom"><p>© 2026 EAD Soluções Integradas. Todos os direitos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div></div>
 </div>
