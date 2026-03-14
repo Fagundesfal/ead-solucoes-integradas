@@ -6,21 +6,19 @@
 <title>EAD Soluções Integradas</title>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#1a6bff;--blue-dark:#1455cc;--bg:#0d0d12;--bg2:#13131a;--bg3:#1a1a24;--border:rgba(255,255,255,0.07);--text:#ffffff;--muted:#8892a4;--subtle:#3d4558;--max:1200px}
+:root{--blue:#1a6bff;--blue-dark:#1455cc;--bg:#0d0d12;--bg2:#13131a;--border:rgba(255,255,255,0.07);--muted:#8892a4;--subtle:#3d4558;--max:1200px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Sora',sans-serif;overflow-x:hidden;line-height:1.6}
-img{display:block}
-a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:3px}
-::-webkit-scrollbar-thumb{background:var(--blue)}
+body{background:var(--bg);color:#fff;font-family:'Sora',sans-serif;overflow-x:hidden;line-height:1.6}
+img{display:block}a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--blue)}
 .container{max-width:var(--max);margin:0 auto;padding:0 24px}
-nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:68px}
-.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:10px}
-.logo-mark{font-size:32px;font-weight:200;letter-spacing:-5px;color:#fff;line-height:1}
-.logo-text .l1{font-size:16px;font-weight:800;letter-spacing:3px;color:#fff}
-.logo-text .l2{font-size:10px;color:var(--blue);font-weight:500;letter-spacing:1px;margin-top:1px}
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:68px}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{font-size:36px;font-weight:200;letter-spacing:-5px;color:#fff;line-height:1;margin-right:2px}
+.logo-text .l1{font-size:20px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1.1}
+.logo-text .l2{font-size:12px;color:var(--blue);font-weight:600;letter-spacing:1px;margin-top:2px}
 .nav-menu{display:flex;align-items:center;gap:32px;list-style:none}
 .nav-menu a{font-size:14px;font-weight:500;color:var(--muted);transition:color .2s}
 .nav-menu a:hover{color:#fff}
@@ -34,23 +32,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.9
 .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
-.hero{min-height:100vh;padding-top:68px;display:flex;align-items:center;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(26,107,255,0.08) 0%,transparent 60%)}
-.hero-inner{max-width:var(--max);margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero{min-height:100vh;padding-top:68px;display:grid;grid-template-columns:1fr 1fr;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(26,107,255,0.08) 0%,transparent 60%)}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:60px 48px 60px 60px;max-width:640px;margin-left:auto}
 .hero-label{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .hero-label::before{content:'';display:block;width:24px;height:2px;background:var(--blue)}
-.hero h1{font-size:52px;font-weight:800;line-height:1.08;letter-spacing:-1.5px;margin-bottom:8px}
+.hero h1{font-size:54px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:12px;color:#fff}
 .hero h1 .accent{color:var(--blue);display:block}
-.hero-sub{font-size:16px;color:var(--muted);font-weight:500;margin-bottom:16px}
-.hero-desc{font-size:15px;color:var(--subtle);line-height:1.8;margin-bottom:36px;max-width:460px}
+.hero-sub{font-size:17px;color:#c8d0e0;font-weight:500;margin-bottom:16px}
+.hero-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px}
 .hero-btns{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:24px;align-items:center}
+.hero-meta{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
 .hero-meta-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
 .hero-meta-item svg{color:var(--blue);flex-shrink:0}
-.hero-visual{position:relative}
-.hero-img-frame{border-radius:20px;overflow:hidden;position:relative;box-shadow:0 40px 80px rgba(0,0,0,0.5)}
-.hero-img-frame img{width:100%;height:520px;object-fit:cover}
-.hero-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(13,13,18,0.8) 100%)}
-.hero-stats-float{position:absolute;bottom:20px;left:16px;right:16px;background:rgba(13,13,18,0.88);backdrop-filter:blur(16px);border-radius:14px;padding:18px 24px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
+.hero-visual{position:relative;overflow:hidden}
+.hero-visual img{width:100%;height:100%;object-fit:cover;min-height:100vh}
+.hero-stats-float{position:absolute;bottom:24px;left:20px;right:20px;background:rgba(13,13,18,0.88);backdrop-filter:blur(16px);border-radius:14px;padding:18px 24px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
 .hstat{text-align:center}
 .hstat+.hstat{border-left:1px solid var(--border)}
 .hstat .n{display:block;font-size:24px;font-weight:800;color:var(--blue)}
@@ -69,22 +65,10 @@ section{padding:100px 0}
 .section-title .accent{color:var(--blue)}
 .section-desc{font-size:15px;color:var(--muted);line-height:1.8;max-width:580px}
 .sobre{background:var(--bg)}
-.sobre-inner{max-width:var(--max);margin:0 auto;padding:100px 24px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.sobre-inner{max-width:var(--max);margin:0 auto;padding:100px 24px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .sobre-img-wrap{position:relative}
 .sobre-img-frame{border-radius:20px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,0.4)}
-.sobre-img-frame img{width:100%;height:500px;object-fit:cover;object-position:top center}
-.sobre-stats-bar{position:absolute;bottom:0;left:0;right:0;background:rgba(13,13,18,0.9);backdrop-filter:blur(16px);border-radius:0 0 20px 20px;padding:18px 24px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
-.sstat{text-align:center}
-.sstat+.sstat{border-left:1px solid var(--border)}
-.sstat .n{display:block;font-size:20px;font-weight:800;color:var(--blue)}
-.sstat .l{font-size:11px;color:var(--muted);margin-top:2px}
-.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
-.feat-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;transition:border-color .2s,transform .2s}
-.feat-card:hover{border-color:rgba(26,107,255,.4);transform:translateY(-2px)}
-.feat-icon{color:var(--blue);margin-bottom:10px}
-.feat-icon svg{width:20px;height:20px}
-.feat-card h4{font-size:13px;font-weight:700;margin-bottom:4px}
-.feat-card p{font-size:12px;color:var(--muted);line-height:1.5}
+.sobre-img-frame img{width:100%;height:600px;object-fit:cover;object-position:top center}
 .servicos{background:var(--bg2)}
 .servicos-header{text-align:center;margin-bottom:56px}
 .servicos-header .section-tag{justify-content:center}
@@ -93,9 +77,9 @@ section{padding:100px 0}
 .servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .scard{background:var(--bg);border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:transform .3s,border-color .3s,box-shadow .3s}
 .scard:hover{transform:translateY(-6px);border-color:rgba(26,107,255,.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
-.scard-img{width:100%;height:200px;object-fit:cover}
+.scard-img-wrap{position:relative;overflow:hidden}
+.scard-img{width:100%;height:240px;object-fit:cover;display:block}
 .scard-num{position:absolute;top:16px;left:16px;background:rgba(13,13,18,0.8);backdrop-filter:blur(8px);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--blue);border:1px solid var(--border)}
-.scard-img-wrap{position:relative}
 .scard-body{padding:24px}
 .scard-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .scard-title svg{color:var(--blue);flex-shrink:0;width:18px;height:18px}
@@ -104,19 +88,29 @@ section{padding:100px 0}
 .scard-tags{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
 .scard-tag{font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:8px}
 .scard-tag::before{content:'';width:5px;height:5px;border-radius:50%;background:rgba(26,107,255,.6);flex-shrink:0}
-.scard-link{font-size:13px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px;transition:gap .2s}
+.scard-link{font-size:13px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px;cursor:pointer;background:none;border:none;font-family:'Sora',sans-serif;transition:gap .2s}
 .scard-link:hover{gap:10px}
 .servicos-cta{text-align:center;margin-top:48px}
 .servicos-cta p{font-size:15px;color:var(--muted);margin-bottom:16px}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px;max-width:560px;width:100%;position:relative;max-height:80vh;overflow-y:auto}
+.modal-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,0.08);border:none;color:#fff;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.modal-icon{color:var(--blue);margin-bottom:16px}
+.modal-icon svg{width:32px;height:32px}
+.modal-box h3{font-size:22px;font-weight:800;margin-bottom:12px}
+.modal-box p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:12px}
+.modal-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.modal-tag{background:rgba(26,107,255,.1);border:1px solid rgba(26,107,255,.2);color:var(--blue);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600}
 .diferenciais{background:var(--bg)}
 .dif-header{text-align:center;margin-bottom:56px}
 .dif-header .section-tag{justify-content:center}
 .dif-header .section-tag::before{display:none}
-.dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:860px;margin:0 auto}
-.dif-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:30px;display:flex;gap:20px;align-items:flex-start;transition:border-color .2s}
+.dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:900px;margin:0 auto}
+.dif-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:36px;display:flex;gap:22px;align-items:flex-start;transition:border-color .2s}
 .dif-card:hover{border-color:rgba(26,107,255,.35)}
-.dif-icon-wrap{width:48px;height:48px;flex-shrink:0;background:rgba(26,107,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--blue)}
-.dif-icon-wrap svg{width:22px;height:22px}
+.dif-icon-wrap{width:52px;height:52px;flex-shrink:0;background:rgba(26,107,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+.dif-icon-wrap svg{width:24px;height:24px}
 .dif-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
 .dif-card p{font-size:13px;color:var(--muted);line-height:1.65}
 .dif-footer{text-align:center;margin-top:40px;color:var(--muted);font-size:14px;line-height:1.8}
@@ -128,7 +122,7 @@ section{padding:100px 0}
 .pilares-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .pilar-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;transition:border-color .2s,transform .2s}
 .pilar-card:hover{border-color:rgba(26,107,255,.35);transform:translateY(-3px)}
-.pilar-num{font-size:40px;font-weight:900;color:rgba(26,107,255,.15);line-height:1;margin-bottom:16px}
+.pilar-num{font-size:44px;font-weight:900;color:rgba(26,107,255,.4);line-height:1;margin-bottom:16px}
 .pilar-icon{color:var(--blue);margin-bottom:14px}
 .pilar-icon svg{width:22px;height:22px}
 .pilar-card h3{font-size:16px;font-weight:700;margin-bottom:10px}
@@ -156,16 +150,21 @@ section{padding:100px 0}
 .form-box h3{font-size:20px;font-weight:700;margin-bottom:28px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .fg{margin-bottom:16px}
-.fg label{display:block;font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:600;letter-spacing:.5px}
+.fg label{display:block;font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:600}
 .fg input,.fg textarea{width:100%;background:var(--bg);border:1px solid var(--border);color:#fff;padding:12px 14px;border-radius:9px;font-family:'Sora',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
 .fg input:focus,.fg textarea:focus{border-color:var(--blue)}
 .fg input::placeholder,.fg textarea::placeholder{color:var(--subtle)}
 .fg textarea{height:110px;resize:none}
-.btn-submit{width:100%;background:var(--blue);color:#fff;border:none;padding:14px;font-family:'Sora',sans-serif;font-size:14px;font-weight:700;cursor:pointer;border-radius:9px;transition:background .2s,transform .2s;display:flex;align-items:center;justify-content:center;gap:8px}
-.btn-submit:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.btn-submit{width:100%;background:var(--blue);color:#fff;border:none;padding:14px;font-family:'Sora',sans-serif;font-size:14px;font-weight:700;cursor:pointer;border-radius:9px;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit:hover{background:var(--blue-dark)}
 .footer{background:var(--bg2);border-top:1px solid var(--border)}
 .footer-main{max-width:var(--max);margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px}
-.footer-brand p{font-size:14px;color:var(--muted);line-height:1.8;margin:16px 0 24px;max-width:260px}
+.footer-brand-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.footer-brand-logo .logo-mark{font-size:36px;font-weight:200;letter-spacing:-5px;color:#fff;line-height:1}
+.footer-brand-logo .l1{font-size:20px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1.1}
+.footer-brand-logo .l2{font-size:12px;color:var(--blue);font-weight:600;letter-spacing:1px;margin-top:2px}
+.footer-brand p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:22px;max-width:260px}
+.footer-divider{width:100%;height:2px;background:var(--blue);border-radius:2px;margin-bottom:22px;opacity:.6}
 .socials{display:flex;gap:10px}
 .social-link{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,0.04);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all .2s}
 .social-link:hover{background:rgba(26,107,255,.15);color:var(--blue);border-color:rgba(26,107,255,.3)}
@@ -183,11 +182,19 @@ section{padding:100px 0}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:18px;font-weight:600;color:var(--muted);padding:12px 0;border-bottom:1px solid var(--border)}
 .mobile-menu .btn{margin-top:16px;justify-content:center;font-size:15px;padding:14px}
-@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.hero h1{font-size:40px}.hero-visual{display:none}.pillars-bar-inner{grid-template-columns:repeat(2,1fr)}.sobre-inner{grid-template-columns:1fr;padding:60px 24px;gap:48px}.servicos-grid{grid-template-columns:repeat(2,1fr)}.pilares-grid{grid-template-columns:repeat(2,1fr)}.contato-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr;gap:40px;padding:40px 24px}}
-@media(max-width:768px){.nav-menu,.nav-tel{display:none}.hamburger{display:flex}.hero h1{font-size:34px}.section-title{font-size:30px}.servicos-grid{grid-template-columns:1fr}.dif-grid{grid-template-columns:1fr}.pilares-grid{grid-template-columns:1fr}.contact-info-grid{grid-template-columns:1fr}.ccard-full{grid-column:auto}.form-row{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.pbar-item{padding:24px 16px}section{padding:64px 0}.quote-section blockquote{font-size:16px}}
-@media(max-width:480px){.hero h1{font-size:28px}.hero-btns{flex-direction:column}.hero-btns .btn{justify-content:center}.features-grid{grid-template-columns:1fr}}
+@media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto}.hero-left{padding:100px 24px 60px;max-width:100%;margin:0}.hero h1{font-size:40px}.hero-visual{display:none}.pillars-bar-inner{grid-template-columns:repeat(2,1fr)}.sobre-inner{grid-template-columns:1fr;padding:60px 24px;gap:48px}.servicos-grid{grid-template-columns:repeat(2,1fr)}.pilares-grid{grid-template-columns:repeat(2,1fr)}.contato-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr;gap:40px;padding:40px 24px}}
+@media(max-width:768px){.nav-menu,.nav-tel{display:none}.hamburger{display:flex}.hero h1{font-size:32px}.section-title{font-size:28px}.servicos-grid{grid-template-columns:1fr}.dif-grid{grid-template-columns:1fr}.pilares-grid{grid-template-columns:1fr}.contact-info-grid{grid-template-columns:1fr}.ccard-full{grid-column:auto}.form-row{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.pbar-item{padding:24px 16px}section{padding:64px 0}.dif-card{padding:24px}}
 </style>
 </head><body>
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="modal-icon" id="modal-icon"></div>
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+    <div class="modal-tags" id="modal-tags"></div>
+  </div>
+</div>
 <nav>
   <div class="nav-inner">
     <a href="#inicio" class="logo">
@@ -218,37 +225,32 @@ section{padding:100px 0}
   <a href="#contato" class="btn btn-primary" onclick="toggleMenu()">Solicitar Orçamento</a>
 </div>
 <section class="hero" id="inicio">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-label">Segurança & Tecnologia</div>
-      <h1>SEGURANÇA E<span class="accent">TECNOLOGIA</span></h1>
-      <p class="hero-sub">Segurança significa preservar sua vida e seus negócios</p>
-      <p class="hero-desc">Para isso, usamos tecnologia de ponta e agentes experientes em diferentes frentes de segurança. Proteja o que é seu com quem entende do assunto.</p>
-      <div class="hero-btns">
-        <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços →</a>
-        <a href="#contato" class="btn btn-ghost">Fale Conosco</a>
+  <div class="hero-left">
+    <div class="hero-label">Segurança & Tecnologia</div>
+    <h1>SEGURANÇA E<span class="accent">TECNOLOGIA</span></h1>
+    <p class="hero-sub">Segurança significa preservar sua vida e seus negócios</p>
+    <p class="hero-desc">Para isso, usamos tecnologia de ponta e agentes experientes em diferentes frentes de segurança. Proteja o que é seu com quem entende do assunto.</p>
+    <div class="hero-btns">
+      <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços →</a>
+      <a href="#contato" class="btn btn-ghost">Fale Conosco</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (11) 99320-5614
       </div>
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          (11) 99320-5614
-        </div>
-        <div class="hero-meta-item">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          @ead_segurancaetecnologia
-        </div>
+      <div class="hero-meta-item">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @ead_segurancaetecnologia
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-img-frame">
-        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=85" alt="Segurança">
-        <div class="hero-img-overlay"></div>
-        <div class="hero-stats-float">
-          <div class="hstat"><span class="n">10+</span><span class="l">Anos</span></div>
-          <div class="hstat"><span class="n">500+</span><span class="l">Clientes</span></div>
-          <div class="hstat"><span class="n">24/7</span><span class="l">Monitoramento</span></div>
-        </div>
-      </div>
+  </div>
+  <div class="hero-visual">
+    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=90" alt="Segurança">
+    <div class="hero-stats-float">
+      <div class="hstat"><span class="n">10+</span><span class="l">Anos</span></div>
+      <div class="hstat"><span class="n">500+</span><span class="l">Clientes Satisfeitos</span></div>
+      <div class="hstat"><span class="n">24/7</span><span class="l">Monitoramento</span></div>
     </div>
   </div>
 </section>
@@ -264,12 +266,7 @@ section{padding:100px 0}
   <div class="sobre-inner">
     <div class="sobre-img-wrap">
       <div class="sobre-img-frame">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=85" alt="Profissional EAD">
-        <div class="sobre-stats-bar">
-          <div class="sstat"><span class="n">10+</span><span class="l">Anos de Experiência</span></div>
-          <div class="sstat"><span class="n">500+</span><span class="l">Clientes Atendidos</span></div>
-          <div class="sstat"><span class="n">24/7</span><span class="l">Monitoramento</span></div>
-        </div>
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=90" alt="Profissional EAD">
       </div>
     </div>
     <div>
@@ -277,11 +274,11 @@ section{padding:100px 0}
       <h2 class="section-title">EAD <span class="accent">Soluções Integradas</span></h2>
       <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px">A EAD é uma empresa renomada no segmento de terceirização, especializada em áreas como Segurança Eletrônica, CFTV Digital, Portarias e Limpeza. Nossa equipe é formada por profissionais altamente qualificados, comprometidos em oferecer soluções eficientes e confiáveis.</p>
       <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px">Com anos de experiência no mercado, a EAD Soluções Integradas foi fundada com um propósito claro: não ser apenas mais uma empresa, mas a maior referência na área. Acreditamos que ninguém tem a chance de viver duas vezes para fazer diferente, por isso, escolhemos fazer o melhor sempre.</p>
-      <div class="features-grid">
-        <div class="feat-card"><div class="feat-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Monitoramento 24h</h4><p>Central própria para vigilância contínua e resposta imediata.</p></div>
-        <div class="feat-card"><div class="feat-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h4>Deslocamento Móvel</h4><p>Unidades equipadas para atender com agilidade e eficiência.</p></div>
-        <div class="feat-card"><div class="feat-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h4>Prevenção Ativa</h4><p>Monitoramento de imagens que reforça a segurança.</p></div>
-        <div class="feat-card"><div class="feat-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h4>Manutenção Especializada</h4><p>Profissionais prontos para garantir o pleno funcionamento.</p></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px">
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Monitoramento 24h</div><div style="font-size:12px;color:var(--muted)">Central própria para vigilância contínua e resposta imediata.</div></div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Deslocamento Móvel</div><div style="font-size:12px;color:var(--muted)">Unidades equipadas para atender com agilidade e eficiência.</div></div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Prevenção Ativa</div><div style="font-size:12px;color:var(--muted)">Monitoramento de imagens que reforça a segurança.</div></div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Manutenção Especializada</div><div style="font-size:12px;color:var(--muted)">Profissionais prontos para garantir o pleno funcionamento.</div></div>
       </div>
     </div>
   </div>
@@ -293,12 +290,12 @@ section{padding:100px 0}
       <p class="section-desc">Oferecemos sistemas avançados de controle de acesso, monitorando a entrada e saída de pessoas e veículos em empresas ou condomínios.</p>
     </div>
     <div class="servicos-grid">
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Monitoramento"><div class="scard-num">1</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Monitoramento de Alarme 24h</h3></div><p>Proteção contínua com resposta rápida para garantir a segurança do seu patrimônio a qualquer hora.</p><div class="scard-tags"><span class="scard-tag">Central própria</span><span class="scard-tag">Resposta imediata</span><span class="scard-tag">Equipe especializada</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="CFTV"><div class="scard-num">2</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3>CFTV</h3></div><p>Monitoramento inteligente com imagens em tempo real para garantir segurança e controle do ambiente.</p><div class="scard-tags"><span class="scard-tag">Imagens HD</span><span class="scard-tag">Acesso remoto</span><span class="scard-tag">Gravação contínua</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Portaria"><div class="scard-num">3</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Portaria</h3></div><p>Gestão de acesso com profissionais capacitados e tecnologias avançadas para garantir segurança.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso</span><span class="scard-tag">Registro de visitantes</span><span class="scard-tag">Segurança 24h</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Pós-Obra"><div class="scard-num">4</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><h3>Pós-Obra</h3></div><p>Serviço especializado em limpeza e organização, deixando o ambiente pronto para uso.</p><div class="scard-tags"><span class="scard-tag">Limpeza profunda</span><span class="scard-tag">Remoção de resíduos</span><span class="scard-tag">Ambiente pronto</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?w=600&q=80" alt="Limpeza"><div class="scard-num">5</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg><h3>Limpeza</h3></div><p>Higienização profissional para garantir ambientes limpos, saudáveis e bem cuidados.</p><div class="scard-tags"><span class="scard-tag">Equipe treinada</span><span class="scard-tag">Produtos adequados</span><span class="scard-tag">Rotina flexível</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Portaria com Obra"><div class="scard-num">6</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg><h3>Portaria com Obra em Andamento</h3></div><p>Controle de acesso especializado para canteiros de obras, garantindo segurança e registro completo.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso rigoroso</span><span class="scard-tag">Registro de trabalhadores</span><span class="scard-tag">Segurança 24h</span></div><a href="#contato" class="scard-link">Saiba mais →</a></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Monitoramento"><div class="scard-num">1</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Monitoramento de Alarme 24h</h3></div><p>Proteção contínua com resposta rápida para garantir a segurança do seu patrimônio a qualquer hora.</p><div class="scard-tags"><span class="scard-tag">Central própria</span><span class="scard-tag">Resposta imediata</span><span class="scard-tag">Equipe especializada</span></div><button class="scard-link" onclick="openModal('monitoramento')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="CFTV"><div class="scard-num">2</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3>CFTV</h3></div><p>Monitoramento inteligente com imagens em tempo real para garantir segurança e controle do ambiente.</p><div class="scard-tags"><span class="scard-tag">Imagens HD</span><span class="scard-tag">Acesso remoto</span><span class="scard-tag">Gravação contínua</span></div><button class="scard-link" onclick="openModal('cftv')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Portaria"><div class="scard-num">3</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Portaria</h3></div><p>Gestão de acesso com profissionais capacitados e tecnologias avançadas para garantir segurança.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso</span><span class="scard-tag">Registro de visitantes</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portaria')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Pós-Obra"><div class="scard-num">4</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><h3>Pós-Obra</h3></div><p>Serviço especializado em limpeza e organização, deixando o ambiente pronto para uso.</p><div class="scard-tags"><span class="scard-tag">Limpeza profunda</span><span class="scard-tag">Remoção de resíduos</span><span class="scard-tag">Ambiente pronto</span></div><button class="scard-link" onclick="openModal('posobra')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?w=600&q=80" alt="Limpeza"><div class="scard-num">5</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg><h3>Limpeza</h3></div><p>Higienização profissional para garantir ambientes limpos, saudáveis e bem cuidados.</p><div class="scard-tags"><span class="scard-tag">Equipe treinada</span><span class="scard-tag">Produtos adequados</span><span class="scard-tag">Rotina flexível</span></div><button class="scard-link" onclick="openModal('limpeza')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Portaria com Obra"><div class="scard-num">6</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg><h3>Portaria com Obra em Andamento</h3></div><p>Controle de acesso especializado para canteiros de obras, garantindo segurança e registro completo.</p><div class="scard-tags"><span class="scard-tag">Controle rigoroso</span><span class="scard-tag">Registro de trabalhadores</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portariaobra')">Saiba mais →</button></div></div>
     </div>
     <div class="servicos-cta"><p>Precisa de uma solução personalizada?</p><a href="#contato" class="btn btn-primary">Fale com um Especialista →</a></div>
   </div>
@@ -356,7 +353,8 @@ section{padding:100px 0}
 <div class="footer">
   <div class="footer-main">
     <div class="footer-brand">
-      <div class="logo"><span class="logo-mark">∞</span><div class="logo-text"><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div></div>
+      <div class="footer-brand-logo"><span class="logo-mark">∞</span><div><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div></div>
+      <div class="footer-divider"></div>
       <p>Segurança significa preservar sua vida e seus negócios. Tecnologia de ponta e agentes experientes.</p>
       <div class="socials">
         <a href="https://instagram.com/ead_segurancaetecnologia" class="social-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -370,6 +368,18 @@ section{padding:100px 0}
   </div>
   <div class="footer-bottom"><p>© 2026 EAD Soluções Integradas. Todos os direitos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div></div>
 </div>
-<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}</script>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+const modalData={
+  monitoramento:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',title:'Monitoramento de Alarme 24h',body:'<p>Nossa central de monitoramento opera 24 horas por dia, 7 dias por semana, garantindo vigilância contínua do seu patrimônio. Com tecnologia de ponta e equipe altamente treinada, respondemos a qualquer ocorrência de forma imediata.</p><p>Ao detectar qualquer anomalia, nossa equipe aciona os protocolos de segurança e, quando necessário, entra em contato com as autoridades competentes e com o cliente.</p>',tags:['Central própria','Resposta imediata','Equipe 24h','Tecnologia avançada','Protocolo de emergência']},
+  cftv:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>',title:'CFTV Digital',body:'<p>Instalamos e gerenciamos sistemas completos de Circuito Fechado de TV Digital, com câmeras de alta resolução que garantem imagens nítidas dia e noite, em qualquer condição climática.</p><p>Nosso sistema permite acesso remoto em tempo real pelo celular ou computador, gravação contínua em nuvem e alertas automáticos de movimento suspeito.</p>',tags:['Câmeras HD','Acesso remoto','Gravação em nuvem','Visão noturna','Alertas automáticos']},
+  portaria:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',title:'Portaria',body:'<p>Disponibilizamos profissionais capacitados e treinados para gerenciar o acesso em condomínios residenciais, comerciais e empresas. Nossos porteiros seguem protocolos rigorosos de segurança.</p><p>Utilizamos sistemas modernos de controle de acesso, registro de visitantes e integração com câmeras para garantir total segurança nas entradas e saídas.</p>',tags:['Controle de acesso','Registro de visitantes','Profissionais treinados','Integração com CFTV','Segurança 24h']},
+  posobra:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>',title:'Pós-Obra',body:'<p>Serviço especializado de limpeza e organização após obras e reformas. Nossa equipe remove todo o entulho, poeira e resíduos, deixando o ambiente completamente limpo e pronto para uso.</p><p>Realizamos limpeza profunda de pisos, paredes, vidros e instalações, com produtos adequados para cada tipo de superfície, garantindo resultado impecável.</p>',tags:['Limpeza profunda','Remoção de entulho','Polimento de pisos','Limpeza de vidros','Ambiente pronto']},
+  limpeza:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>',title:'Limpeza',body:'<p>Oferecemos serviços de higienização profissional para empresas, condomínios e estabelecimentos comerciais. Nossa equipe utiliza produtos de qualidade e equipamentos modernos para garantir ambientes sempre limpos e saudáveis.</p><p>Trabalhamos com cronogramas flexíveis, diário, semanal ou mensal, adaptando-nos à necessidade de cada cliente.</p>',tags:['Equipe treinada','Produtos certificados','Rotina flexível','Higienização completa','Equipamentos modernos']},
+  portariaobra:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>',title:'Portaria com Obra em Andamento',body:'<p>Serviço especializado para canteiros de obras, garantindo controle rigoroso de entrada e saída de trabalhadores, visitantes e materiais. Nossos profissionais são treinados para atuar em ambientes de construção.</p><p>Realizamos registro completo de todos os acessos, verificação de credenciais, controle de equipamentos e garantimos a segurança do perímetro durante toda a obra.</p>',tags:['Controle rigoroso','Registro completo','Verificação de credenciais','Segurança do perímetro','Relatórios diários']}
+};
+function openModal(key){const d=modalData[key];document.getElementById('modal-icon').innerHTML=d.icon;document.getElementById('modal-title').textContent=d.title;document.getElementById('modal-body').innerHTML=d.body;document.getElementById('modal-tags').innerHTML=d.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('');document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+</script>
 </body>
 </html>
