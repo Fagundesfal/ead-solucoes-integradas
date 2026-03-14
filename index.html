@@ -32,25 +32,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(13,13,18,0.9
 .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
-.hero{min-height:100vh;padding-top:68px;display:grid;grid-template-columns:1fr 1fr;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(26,107,255,0.08) 0%,transparent 60%)}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:60px 48px 60px 60px;max-width:640px;margin-left:auto}
+.hero{padding-top:68px}
+.hero-img{width:100%;height:75vh;object-fit:cover;object-position:center;display:block}
+.hero-content{max-width:var(--max);margin:0 auto;padding:60px 24px 0}
 .hero-label{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .hero-label::before{content:'';display:block;width:24px;height:2px;background:var(--blue)}
-.hero h1{font-size:54px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:12px;color:#fff}
+.hero h1{font-size:58px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:12px;color:#fff}
 .hero h1 .accent{color:var(--blue);display:block}
-.hero-sub{font-size:17px;color:#c8d0e0;font-weight:500;margin-bottom:16px}
-.hero-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px}
+.hero-sub{font-size:17px;color:#e2e8f0;font-weight:500;margin-bottom:16px}
+.hero-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px;max-width:640px}
 .hero-btns{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.hero-meta{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-bottom:48px}
 .hero-meta-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
 .hero-meta-item svg{color:var(--blue);flex-shrink:0}
-.hero-visual{position:relative;overflow:hidden}
-.hero-visual img{width:100%;height:100%;object-fit:cover;min-height:100vh}
-.hero-stats-float{position:absolute;bottom:24px;left:20px;right:20px;background:rgba(13,13,18,0.88);backdrop-filter:blur(16px);border-radius:14px;padding:18px 24px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
-.hstat{text-align:center}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:14px;background:var(--bg2);margin-bottom:0}
+.hstat{text-align:center;padding:24px}
 .hstat+.hstat{border-left:1px solid var(--border)}
-.hstat .n{display:block;font-size:24px;font-weight:800;color:var(--blue)}
-.hstat .l{font-size:11px;color:var(--muted);margin-top:2px}
+.hstat .n{display:block;font-size:28px;font-weight:800;color:var(--blue)}
+.hstat .l{font-size:13px;color:var(--muted);margin-top:4px}
 .pillars-bar{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .pillars-bar-inner{max-width:var(--max);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr)}
 .pbar-item{padding:36px 24px;text-align:center;border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:10px}
@@ -182,7 +181,7 @@ section{padding:100px 0}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:18px;font-weight:600;color:var(--muted);padding:12px 0;border-bottom:1px solid var(--border)}
 .mobile-menu .btn{margin-top:16px;justify-content:center;font-size:15px;padding:14px}
-@media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto}.hero-left{padding:100px 24px 60px;max-width:100%;margin:0}.hero h1{font-size:40px}.hero-visual{display:none}.pillars-bar-inner{grid-template-columns:repeat(2,1fr)}.sobre-inner{grid-template-columns:1fr;padding:60px 24px;gap:48px}.servicos-grid{grid-template-columns:repeat(2,1fr)}.pilares-grid{grid-template-columns:repeat(2,1fr)}.contato-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr;gap:40px;padding:40px 24px}}
+@media(max-width:1024px){.hero h1{font-size:40px}.hero-content{padding:100px 24px 80px}.hero-left{max-width:100%}.pillars-bar-inner{grid-template-columns:repeat(2,1fr)}.sobre-inner{grid-template-columns:1fr;padding:60px 24px;gap:48px}.servicos-grid{grid-template-columns:repeat(2,1fr)}.pilares-grid{grid-template-columns:repeat(2,1fr)}.contato-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr;gap:40px;padding:40px 24px}}
 @media(max-width:768px){.nav-menu,.nav-tel{display:none}.hamburger{display:flex}.hero h1{font-size:32px}.section-title{font-size:28px}.servicos-grid{grid-template-columns:1fr}.dif-grid{grid-template-columns:1fr}.pilares-grid{grid-template-columns:1fr}.contact-info-grid{grid-template-columns:1fr}.ccard-full{grid-column:auto}.form-row{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.pbar-item{padding:24px 16px}section{padding:64px 0}.dif-card{padding:24px}}
 </style>
 </head><body>
@@ -198,7 +197,7 @@ section{padding:100px 0}
 <nav>
   <div class="nav-inner">
     <a href="#inicio" class="logo">
-      <span class="logo-mark">∞</span>
+      <img src="./logo-ead.png" alt="EAD" style="height:42px;width:auto">
       <div class="logo-text"><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div>
     </a>
     <ul class="nav-menu">
@@ -225,7 +224,8 @@ section{padding:100px 0}
   <a href="#contato" class="btn btn-primary" onclick="toggleMenu()">Solicitar Orçamento</a>
 </div>
 <section class="hero" id="inicio">
-  <div class="hero-left">
+  <img class="hero-img" src="./corporate-background.png" alt="EAD Soluções Integradas">
+  <div class="hero-content">
     <div class="hero-label">Segurança & Tecnologia</div>
     <h1>SEGURANÇA E<span class="accent">TECNOLOGIA</span></h1>
     <p class="hero-sub">Segurança significa preservar sua vida e seus negócios</p>
@@ -244,12 +244,9 @@ section{padding:100px 0}
         @ead_segurancaetecnologia
       </div>
     </div>
-  </div>
-  <div class="hero-visual">
-    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=90" alt="Segurança">
-    <div class="hero-stats-float">
-      <div class="hstat"><span class="n">10+</span><span class="l">Anos</span></div>
-      <div class="hstat"><span class="n">500+</span><span class="l">Clientes Satisfeitos</span></div>
+    <div class="hero-stats">
+      <div class="hstat"><span class="n">10+</span><span class="l">Anos de Experiência</span></div>
+      <div class="hstat"><span class="n">😊</span><span class="l">Clientes Satisfeitos</span></div>
       <div class="hstat"><span class="n">24/7</span><span class="l">Monitoramento</span></div>
     </div>
   </div>
@@ -266,7 +263,7 @@ section{padding:100px 0}
   <div class="sobre-inner">
     <div class="sobre-img-wrap">
       <div class="sobre-img-frame">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=90" alt="Profissional EAD">
+        <img src="./resultados.png" alt="EAD Soluções Integradas">
       </div>
     </div>
     <div>
@@ -290,12 +287,12 @@ section{padding:100px 0}
       <p class="section-desc">Oferecemos sistemas avançados de controle de acesso, monitorando a entrada e saída de pessoas e veículos em empresas ou condomínios.</p>
     </div>
     <div class="servicos-grid">
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Monitoramento"><div class="scard-num">1</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Monitoramento de Alarme 24h</h3></div><p>Proteção contínua com resposta rápida para garantir a segurança do seu patrimônio a qualquer hora.</p><div class="scard-tags"><span class="scard-tag">Central própria</span><span class="scard-tag">Resposta imediata</span><span class="scard-tag">Equipe especializada</span></div><button class="scard-link" onclick="openModal('monitoramento')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="CFTV"><div class="scard-num">2</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3>CFTV</h3></div><p>Monitoramento inteligente com imagens em tempo real para garantir segurança e controle do ambiente.</p><div class="scard-tags"><span class="scard-tag">Imagens HD</span><span class="scard-tag">Acesso remoto</span><span class="scard-tag">Gravação contínua</span></div><button class="scard-link" onclick="openModal('cftv')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Portaria"><div class="scard-num">3</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Portaria</h3></div><p>Gestão de acesso com profissionais capacitados e tecnologias avançadas para garantir segurança.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso</span><span class="scard-tag">Registro de visitantes</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portaria')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Pós-Obra"><div class="scard-num">4</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><h3>Pós-Obra</h3></div><p>Serviço especializado em limpeza e organização, deixando o ambiente pronto para uso.</p><div class="scard-tags"><span class="scard-tag">Limpeza profunda</span><span class="scard-tag">Remoção de resíduos</span><span class="scard-tag">Ambiente pronto</span></div><button class="scard-link" onclick="openModal('posobra')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?w=600&q=80" alt="Limpeza"><div class="scard-num">5</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg><h3>Limpeza</h3></div><p>Higienização profissional para garantir ambientes limpos, saudáveis e bem cuidados.</p><div class="scard-tags"><span class="scard-tag">Equipe treinada</span><span class="scard-tag">Produtos adequados</span><span class="scard-tag">Rotina flexível</span></div><button class="scard-link" onclick="openModal('limpeza')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Portaria com Obra"><div class="scard-num">6</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg><h3>Portaria com Obra em Andamento</h3></div><p>Controle de acesso especializado para canteiros de obras, garantindo segurança e registro completo.</p><div class="scard-tags"><span class="scard-tag">Controle rigoroso</span><span class="scard-tag">Registro de trabalhadores</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portariaobra')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-alarme.png" alt="Monitoramento"><div class="scard-num">1</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Monitoramento de Alarme 24h</h3></div><p>Proteção contínua com resposta rápida para garantir a segurança do seu patrimônio a qualquer hora.</p><div class="scard-tags"><span class="scard-tag">Central própria</span><span class="scard-tag">Resposta imediata</span><span class="scard-tag">Equipe especializada</span></div><button class="scard-link" onclick="openModal('monitoramento')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-cftv.png" alt="CFTV"><div class="scard-num">2</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3>CFTV</h3></div><p>Monitoramento inteligente com imagens em tempo real para garantir segurança e controle do ambiente.</p><div class="scard-tags"><span class="scard-tag">Imagens HD</span><span class="scard-tag">Acesso remoto</span><span class="scard-tag">Gravação contínua</span></div><button class="scard-link" onclick="openModal('cftv')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-portaria.png" alt="Portaria"><div class="scard-num">3</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Portaria</h3></div><p>Gestão de acesso com profissionais capacitados e tecnologias avançadas para garantir segurança.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso</span><span class="scard-tag">Registro de visitantes</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portaria')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-pos-obra.png" alt="Pós-Obra"><div class="scard-num">4</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><h3>Pós-Obra</h3></div><p>Serviço especializado em limpeza e organização, deixando o ambiente pronto para uso.</p><div class="scard-tags"><span class="scard-tag">Limpeza profunda</span><span class="scard-tag">Remoção de resíduos</span><span class="scard-tag">Ambiente pronto</span></div><button class="scard-link" onclick="openModal('posobra')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-limpeza.png" alt="Limpeza"><div class="scard-num">5</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg><h3>Limpeza</h3></div><p>Higienização profissional para garantir ambientes limpos, saudáveis e bem cuidados.</p><div class="scard-tags"><span class="scard-tag">Equipe treinada</span><span class="scard-tag">Produtos adequados</span><span class="scard-tag">Rotina flexível</span></div><button class="scard-link" onclick="openModal('limpeza')">Saiba mais →</button></div></div>
+      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-obra-andamento.png" alt="Portaria com Obra"><div class="scard-num">6</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg><h3>Portaria com Obra em Andamento</h3></div><p>Controle de acesso especializado para canteiros de obras, garantindo segurança e registro completo.</p><div class="scard-tags"><span class="scard-tag">Controle rigoroso</span><span class="scard-tag">Registro de trabalhadores</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portariaobra')">Saiba mais →</button></div></div>
     </div>
     <div class="servicos-cta"><p>Precisa de uma solução personalizada?</p><a href="#contato" class="btn btn-primary">Fale com um Especialista →</a></div>
   </div>
@@ -353,7 +350,10 @@ section{padding:100px 0}
 <div class="footer">
   <div class="footer-main">
     <div class="footer-brand">
-      <div class="footer-brand-logo"><span class="logo-mark">∞</span><div><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div></div>
+      <div class="footer-brand-logo">
+        <img src="./logo-ead.png" alt="EAD" style="height:48px;width:auto">
+        <div><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div>
+      </div>
       <div class="footer-divider"></div>
       <p>Segurança significa preservar sua vida e seus negócios. Tecnologia de ponta e agentes experientes.</p>
       <div class="socials">
