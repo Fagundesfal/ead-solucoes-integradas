@@ -3,444 +3,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EAD Soluções Integradas</title><!-- SEO e Meta Tags -->
-  <meta name="description" content="EAD Soluções Integradas — Segurança Eletrônica, CFTV, Portaria e Limpeza em Alphaville, Barueri e Jandira SP. Monitoramento 24h.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://eadsolucoesintegradas.com.br/">
-
-  <!-- Open Graph (WhatsApp, Instagram, LinkedIn) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://eadsolucoesintegradas.com.br/">
-  <meta property="og:title" content="EAD Soluções Integradas — Segurança, CFTV e Portaria em Alphaville">
-  <meta property="og:description" content="Especialistas em segurança eletrônica, CFTV digital, portaria e limpeza para empresas e condomínios. Monitoramento 24h.">
-  <meta property="og:image" content="https://eadsolucoesintegradas.com.br/logo-ead.png">
-
-  <!-- Schema LocalBusiness (Google Maps / SEO local) -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"EAD Soluções Integradas","url":"https://eadsolucoesintegradas.com.br","telephone":"+5511994293041","email":"contato@eadseguranca.com.br","address":{"@type":"PostalAddress","streetAddress":"Av. Carmine Gragnano, 150","addressLocality":"Jandira","addressRegion":"SP","addressCountry":"BR"},"openingHours":"Mo-Su 00:00-23:59","sameAs":["https://www.instagram.com/eadsi_"]}
-  </script>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>EAD Soluções Integradas – Portaria de obra, recepção e limpeza</title>
+<meta name="description" content="Terceirização de portaria de obra, recepção e limpeza (inclusive pós-obra) para construtoras, incorporadoras, empresas e condomínios. Jandira e Grande São Paulo.">
+<meta property="og:title" content="EAD Soluções Integradas">
+<meta property="og:description" content="Portaria de obra com equipe própria, uniformizada e supervisionada. Recepção e limpeza no mesmo contrato.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.eadsolucoesintegradas.com.br/og-ead.jpg">
+<link rel="icon" type="image/png" href="logo-ead-web.png">
+<meta property="og:url" content="https://www.eadsolucoesintegradas.com.br/">
+<meta name="theme-color" content="#071634">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#1a6bff;--blue-dark:#1455cc;--bg:#0d0d12;--bg2:#13131a;--border:rgba(255,255,255,0.07);--muted:#8892a4;--subtle:#3d4558;--max:1200px}
+:root{--navy:#071634;--navy2:#0E2F73;--blue:#2F6BEA;--blue-l:#4F8BFF;--light:#F4F6FA;--light2:#E9EEF7;--card:#FBFCFE;--ink:#14213D;--body:#3A4558;--line:#D9E1EE;--soft:#BFD0F5;--max:1180px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:#fff;font-family:'Sora',sans-serif;overflow-x:hidden;line-height:1.6}
-img{display:block}a{text-decoration:none;color:inherit}
-::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--blue)}
-.container{max-width:var(--max);margin:0 auto;padding:0 24px}
-nav{position:fixed;top:0;left:0;right:0;z-index:999;background:#0d0d12;border-bottom:1px solid var(--border);height:68px}
-.nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-text .l1{font-size:20px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1.1}
-.logo-text .l2{font-size:12px;color:var(--blue);font-weight:600;letter-spacing:1px;margin-top:2px}
-.nav-menu{display:flex;align-items:center;gap:32px;list-style:none}
-.nav-menu a{font-size:14px;font-weight:500;color:var(--muted);transition:color .2s}
-.nav-menu a:hover{color:#fff}
-.nav-right{display:flex;align-items:center;gap:18px}
-.nav-tel{font-size:13px;font-weight:600;color:#fff;display:flex;align-items:center;gap:6px}
-.nav-tel svg{color:var(--blue)}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:8px;font-family:'Sora',sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:all .2s}
-.btn-primary{background:var(--blue);color:#fff}
-.btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px)}
-.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.2);color:#fff}
-.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
-.hero{padding-top:68px}
-.hero-img{width:100%;height:70vh;object-fit:cover;object-position:center center;display:block}
-.hero-content{max-width:var(--max);margin:0 auto;padding:60px 24px 0}
-.hero-label{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.hero-label::before{display:none}
-.hero h1{font-size:58px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:12px;color:#fff}
-.hero h1 .accent{color:var(--blue);display:block}
-.hero-sub{font-size:17px;color:#e2e8f0;font-weight:500;margin-bottom:16px}
-.hero-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px;max-width:640px}
-.hero-btns{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-bottom:48px}
-.hero-meta-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
-.hero-meta-item svg{color:var(--blue);flex-shrink:0}
-.pillars-bar{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.pillars-bar-inner{max-width:var(--max);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr)}
-.pbar-item{padding:36px 24px;text-align:center;border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:10px}
-.pbar-item:last-child{border-right:none}
-.pbar-icon{font-size:26px}
-.pbar-title{font-size:14px;font-weight:700;color:#fff}
-.pbar-sub{font-size:12px;color:var(--muted)}
-section{padding:100px 0}
-.section-tag{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.section-tag::before{content:'';display:block;width:20px;height:2px;background:var(--blue)}
-.section-title{font-size:40px;font-weight:800;line-height:1.12;letter-spacing:-1px;margin-bottom:16px}
-.section-title .accent{color:var(--blue)}
-.section-desc{font-size:15px;color:var(--muted);line-height:1.8;max-width:580px}
-.sobre{background:var(--bg)}
-.sobre-inner{max-width:var(--max);margin:0 auto;padding:100px 24px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.sobre-img-wrap{position:relative}
-.sobre-img-frame{border-radius:20px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,0.4)}
-.sobre-img-frame img{width:100%;height:600px;object-fit:cover;object-position:top center}
-.servicos{background:var(--bg2)}
-.servicos-header{text-align:center;margin-bottom:56px}
-.servicos-header .section-tag{justify-content:center}
-.servicos-header .section-tag::before{display:none}
-.servicos-header .section-desc{margin:0 auto}
-.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.scard{background:var(--bg);border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:transform .3s,border-color .3s,box-shadow .3s}
-.scard:hover{transform:translateY(-6px);border-color:rgba(26,107,255,.3);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
-.scard-img-wrap{position:relative;overflow:hidden}
-.scard-img{width:100%;height:240px;object-fit:cover;display:block}
-.scard-num{position:absolute;top:16px;left:16px;background:#0d0d12;width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--blue);border:1px solid var(--border)}
-.scard-body{padding:24px}
-.scard-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.scard-title svg{color:var(--blue);flex-shrink:0;width:18px;height:18px}
-.scard-title h3{font-size:15px;font-weight:700}
-.scard-body>p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:16px}
-.scard-tags{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
-.scard-tag{font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:8px}
-.scard-tag::before{content:'';width:5px;height:5px;border-radius:50%;background:rgba(26,107,255,.6);flex-shrink:0}
-.scard-link{font-size:13px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px;cursor:pointer;background:none;border:none;font-family:'Sora',sans-serif;transition:gap .2s}
-.scard-link:hover{gap:10px}
-.servicos-cta{text-align:center;margin-top:48px}
-.servicos-cta p{font-size:15px;color:var(--muted);margin-bottom:16px}
-.modal-overlay{display:none;position:fixed;inset:0;background:#000000cc;z-index:1000;align-items:center;justify-content:center;padding:24px}
-.modal-overlay.open{display:flex}
-.modal-box{background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px;max-width:560px;width:100%;position:relative;max-height:80vh;overflow-y:auto}
-.modal-close{position:absolute;top:16px;right:16px;background:#1a1a24;border:none;color:#fff;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
-.modal-icon{color:var(--blue);margin-bottom:16px}
-.modal-icon svg{width:32px;height:32px}
-.modal-box h3{font-size:22px;font-weight:800;margin-bottom:12px}
-.modal-box p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:12px}
-.modal-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.modal-tag{background:#1a2540;border:1px solid rgba(26,107,255,.2);color:var(--blue);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600}
-.diferenciais{background:var(--bg)}
-.dif-header{text-align:center;margin-bottom:56px}
-.dif-header .section-tag{justify-content:center}
-.dif-header .section-tag::before{display:none}
-.dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:900px;margin:0 auto}
-.dif-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:36px;display:flex;gap:22px;align-items:flex-start;transition:border-color .2s}
-.dif-card:hover{border-color:rgba(26,107,255,.35)}
-.dif-icon-wrap{width:52px;height:52px;flex-shrink:0;background:#1a2540;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--blue)}
-.dif-icon-wrap svg{width:24px;height:24px}
-.dif-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
-.dif-card p{font-size:13px;color:var(--muted);line-height:1.65}
-.dif-footer{text-align:center;margin-top:40px;color:var(--muted);font-size:14px;line-height:1.8}
-.pilares{background:var(--bg2)}
-.pilares-header{text-align:center;margin-bottom:56px}
-.pilares-header .section-tag{justify-content:center}
-.pilares-header .section-tag::before{display:none}
-.pilares-header .section-desc{margin:0 auto}
-.pilares-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.pilar-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;transition:border-color .2s,transform .2s}
-.pilar-card:hover{border-color:rgba(26,107,255,.35);transform:translateY(-3px)}
-.pilar-num{font-size:44px;font-weight:900;color:rgba(26,107,255,.4);line-height:1;margin-bottom:16px}
-.pilar-icon{color:var(--blue);margin-bottom:14px}
-.pilar-icon svg{width:22px;height:22px}
-.pilar-card h3{font-size:16px;font-weight:700;margin-bottom:10px}
-.pilar-card p{font-size:13px;color:var(--muted);line-height:1.7}
-.quote-section{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 24px;text-align:center}
-.quote-inner{max-width:720px;margin:0 auto}
-.quote-mark{font-size:60px;color:var(--blue);opacity:.3;line-height:.5;margin-bottom:16px;font-family:Georgia,serif}
-.quote-section blockquote{font-size:20px;font-style:italic;color:#c8d0e0;line-height:1.7;font-weight:300}
-.contato{background:var(--bg)}
-.contato-header{text-align:center;margin-bottom:56px}
-.contato-header .section-tag{justify-content:center}
-.contato-header .section-tag::before{display:none}
-.contato-header .section-desc{margin:0 auto}
-.contato-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:40px}
-.contact-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
-.ccard{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;transition:border-color .2s}
-.ccard:hover{border-color:rgba(26,107,255,.35)}
-.ccard-label{font-size:10px;color:var(--blue);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:6px}
-.ccard-label svg{width:12px;height:12px}
-.ccard-value{font-size:14px;font-weight:600;color:#fff}
-.ccard-full{grid-column:span 2}
-.map-frame{display:none}
-.map-link{display:flex;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:600;font-size:14px;margin-top:14px;gap:10px}
-.form-box{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:36px}
-.form-box h3{font-size:20px;font-weight:700;margin-bottom:28px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fg{margin-bottom:16px}
-.fg label{display:block;font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:600}
-.fg input,.fg textarea{width:100%;background:var(--bg);border:1px solid var(--border);color:#fff;padding:12px 14px;border-radius:9px;font-family:'Sora',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
-.fg input:focus,.fg textarea:focus{border-color:var(--blue)}
-.fg input::placeholder,.fg textarea::placeholder{color:var(--subtle)}
-.fg textarea{height:110px;resize:none}
-.btn-submit{width:100%;background:var(--blue);color:#fff;border:none;padding:14px;font-family:'Sora',sans-serif;font-size:14px;font-weight:700;cursor:pointer;border-radius:9px;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
-.btn-submit:hover{background:var(--blue-dark)}
-.footer{background:var(--bg2);border-top:1px solid var(--border)}
-.footer-main{max-width:var(--max);margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px}
-.footer-brand-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.footer-brand-logo .l1{font-size:20px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1.1}
-.footer-brand-logo .l2{font-size:12px;color:var(--blue);font-weight:600;letter-spacing:1px;margin-top:2px}
-.footer-brand p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:22px;max-width:260px}
-.footer-divider{width:100%;height:2px;background:var(--blue);border-radius:2px;margin-bottom:22px;opacity:.6}
-.socials{display:flex;gap:10px}
-.social-link{width:36px;height:36px;border-radius:9px;background:#1a1a24;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all .2s}
-.social-link:hover{background:#1a2540;color:var(--blue);border-color:rgba(26,107,255,.3)}
-.social-link svg{width:16px;height:16px}
-.footer-col h4{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:20px}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:12px}
-.footer-col ul a{font-size:14px;color:var(--muted);transition:color .2s}
-.footer-col ul a:hover{color:#fff}
-.footer-bottom{border-top:1px solid var(--border);max-width:var(--max);margin:0 auto;padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
-.footer-bottom p{font-size:13px;color:var(--subtle)}
-.footer-bottom-links{display:flex;gap:20px}
-.footer-bottom-links a{font-size:13px;color:var(--subtle);transition:color .2s}
-.footer-bottom-links a:hover{color:#fff}
-.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;background:#0d0d12;z-index:998;padding:32px 24px;flex-direction:column;gap:8px;overflow-y:auto}
-.mobile-menu.open{display:flex}
-.mobile-menu a{font-size:16px;font-weight:600;color:var(--muted);padding:12px 0;border-bottom:1px solid var(--border)}
-.mobile-menu .btn{margin-top:16px;justify-content:center;font-size:15px;padding:14px}
-@media(max-width:1024px){
-  .hero h1{font-size:40px}
-  .hero-content{padding:40px 24px 60px}
-  .pillars-bar-inner{grid-template-columns:repeat(2,1fr)}
-  .sobre-inner{grid-template-columns:1fr;padding:60px 24px;gap:48px}
-  .servicos-grid{grid-template-columns:repeat(2,1fr)}
-  .pilares-grid{grid-template-columns:repeat(2,1fr)}
-  .contato-grid{grid-template-columns:1fr}
-  .footer-main{grid-template-columns:1fr 1fr;gap:40px;padding:40px 24px}
-}
-@media(max-width:768px){
-  html,body{overflow-x:hidden;width:100%}
-  .nav-menu,.nav-tel{display:none}
-  .hamburger{display:flex}
-  .nav-inner{padding:0 16px}
-  .hero-img{height:56vw;min-height:200px;max-height:320px}
-  .hero-content{padding:28px 16px 40px}
-  .hero h1{font-size:26px;letter-spacing:-1px}
-  .hero-sub{font-size:14px}
-  .hero-desc{font-size:13px;margin-bottom:24px}
-  .hero-btns{flex-direction:column}
-  .hero-btns .btn{justify-content:center;width:100%}
-  .hero-meta{gap:12px;margin-bottom:28px}
-  .pillars-bar-inner{grid-template-columns:1fr 1fr}
-  .pbar-item{padding:18px 10px}
-  .pbar-title{font-size:11px}
-  .pbar-sub{font-size:10px}
-  .sobre-inner{padding:40px 16px;gap:28px}
-  .sobre-img-frame img{height:260px}
-  section{padding:48px 0}
-  .container{padding:0 16px}
-  .section-title{font-size:24px}
-  .servicos-grid{grid-template-columns:1fr}
-  .scard-img{height:180px}
-  .dif-grid{grid-template-columns:1fr}
-  .dif-card{padding:20px;gap:14px}
-  .pilares-grid{grid-template-columns:1fr}
-  .quote-section{padding:40px 16px}
-  .quote-section blockquote{font-size:15px}
-  .contact-info-grid{grid-template-columns:1fr}
-  .ccard-full{grid-column:auto}
-  .form-row{grid-template-columns:1fr}
-  .footer-main{grid-template-columns:1fr;gap:28px;padding:36px 16px}
-  .footer-bottom{flex-direction:column;gap:10px;text-align:center;padding:16px}
-  .footer-bottom-links{flex-wrap:wrap;justify-content:center}
-}
-.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:transform .2s;text-decoration:none}
-.whatsapp-float:hover{transform:scale(1.1)}</style>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P3SJRMRCP"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6P3SJRMRCP');</script>
-</head><body>
-<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">×</button>
-    <div class="modal-icon" id="modal-icon"></div>
-    <h3 id="modal-title"></h3>
-    <div id="modal-body"></div>
-    <div class="modal-tags" id="modal-tags"></div>
-  </div>
-</div>
+body{background:var(--light);color:var(--ink);font-family:'Public Sans',Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,.display{font-family:'Oswald',Arial,sans-serif;font-weight:600;line-height:1.08;letter-spacing:.2px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue)}
+.on-dark .eyebrow{color:#9DB8F2}
+section{padding:96px 0}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(7,22,52,.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--light)}
+.seal{display:flex;align-items:center;justify-content:center;width:62px;height:36px;border:3px solid var(--blue-l);border-radius:50%;font-family:'Oswald',Arial,sans-serif;font-weight:700;font-style:italic;font-size:20px;color:var(--light)}
+.brand b{font-family:'Oswald',Arial,sans-serif;font-weight:600;letter-spacing:2px;font-size:17px}
+.links{display:flex;gap:28px;font-size:15px;color:var(--soft)}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:999px;transition:background .2s,transform .2s}
+.btn:hover{background:#2459c9;transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.35)}
+.btn.ghost:hover{border-color:#fff;background:transparent}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--light);padding:112px 0 104px}
+.hero h1{font-size:clamp(40px,6.4vw,76px);font-weight:700;max-width:900px;margin:18px 0 22px}
+.hero p.lead{font-size:clamp(17px,2vw,21px);color:var(--soft);max-width:680px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.chip{font-size:14px;color:var(--light);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 16px}
+/* grids/cards */
+.head{max-width:760px;margin-bottom:44px}
+.head h2{font-size:clamp(32px,4.4vw,50px);margin-top:12px}
+.head p{font-size:18px;color:var(--body);margin-top:14px}
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px}
+.card h3{font-size:21px;font-weight:700;margin-bottom:8px}
+.card p{color:var(--body);font-size:16.5px}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--light2);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--blue)}
+.ico svg{width:24px;height:24px}
+.step{border-top:6px solid var(--blue)}
+.step .n{font-family:'Oswald',Arial,sans-serif;font-weight:700;font-size:38px;color:var(--blue);line-height:1;margin-bottom:14px}
+/* bonus */
+.bonus{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--light)}
+.bonus .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.big{font-family:'Oswald',Arial,sans-serif;font-weight:700;font-size:clamp(120px,16vw,200px);line-height:.9;color:var(--blue-l)}
+.bonus h2{font-size:clamp(32px,4vw,48px);margin-top:10px}
+.bonus ul{list-style:none;display:grid;gap:14px;margin:22px 0}
+.bonus li{font-size:19px;color:var(--soft)}.bonus li b{color:#fff}
+.bonus small{color:#9DB8F2;font-size:15px}
+/* transparency */
+.alt{background:var(--light2)}
+.checks{display:grid;gap:14px}
+.check{display:flex;align-items:center;gap:14px;background:var(--card);border-radius:14px;padding:18px 22px;font-weight:600;font-size:17px}
+.check svg{flex:none;width:26px;height:26px;color:var(--blue)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+/* table */
+.cmp{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:16.5px}
+.cmp th{background:var(--navy2);color:#fff;text-align:left;padding:16px 20px;font-weight:700}
+.cmp td{padding:16px 20px;border-top:1px solid var(--line);background:var(--card)}
+.cmp tr:nth-child(odd) td{background:#EEF2F9}
+.cmp td:nth-child(2){color:#5A6578}.cmp td:nth-child(3){font-weight:700}
+/* contact */
+.contact{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--light)}
+.contact h2{font-size:clamp(34px,4.6vw,56px)}
+.contact .lead{color:var(--soft);font-size:19px;margin:16px 0 30px}
+.clist{display:grid;gap:16px}
+.citem{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.citem svg{flex:none;width:24px;height:24px;color:var(--blue-l);margin-top:2px}
+.citem span{color:var(--soft);display:block;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.citem a:hover{text-decoration:underline}
+.citem div{min-width:0;overflow-wrap:anywhere}
+.two>*{min-width:0}
+footer{background:#050f25;color:#8FA3C8;font-size:14px;padding:28px 0}
+.foot{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1FAF5A;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa svg{width:30px;height:30px;color:#fff}
+@media (max-width:900px){.g3,.g4{grid-template-columns:1fr 1fr}.bonus .cols,.two{grid-template-columns:1fr;gap:32px}.links{display:none}}
+@media (max-width:600px){section{padding:72px 0}.g2,.g3,.g4{grid-template-columns:1fr}.hero{padding:80px 0 76px}.nav-in .btn{padding:10px 16px;font-size:14px}.brand b{display:none}.cmp{font-size:15px}.cmp th,.cmp td{padding:12px 12px}}
+</style>
+</head>
+<body>
+
 <nav>
-  <div class="nav-inner">
-    <a href="#inicio" class="logo">
-      <img src="./logo-ead.png" alt="EAD" style="height:62px;width:auto">
-      
-    </a>
-    <ul class="nav-menu">
-      <li><a href="#inicio">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="nav-tel">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        (11) 99320-5614
-      </div>
-      <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
-      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio" aria-label="EAD Soluções Integradas – início"><img src="logo-ead-web.png" alt="EAD" width="60" height="42" style="height:42px;width:auto"><b>SOLUÇÕES INTEGRADAS</b></a>
+    <div class="links">
+      <a href="#portaria">Portaria</a>
+      <a href="#como">Como trabalhamos</a>
+      <a href="#servicos">Recepção e limpeza</a>
+      <a href="#contato">Contato</a>
     </div>
+    <a class="btn" href="https://wa.me/5511927415146?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20com%20a%20EAD." target="_blank" rel="noopener">Pedir orçamento</a>
   </div>
 </nav>
-<a href="https://wa.me/5511994293041" target="_blank" class="whatsapp-float">💬</a><div class="mobile-menu" id="mobileMenu">
-  <a href="#inicio" onclick="toggleMenu()">Home</a>
-  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
-  <a href="#servicos" onclick="toggleMenu()">Serviços</a>
-  <a href="#contato" onclick="toggleMenu()">Contato</a>
-  <a href="#contato" class="btn btn-primary" onclick="toggleMenu()">Solicitar Orçamento</a>
-</div>
-<section class="hero" id="inicio">
-  <img class="hero-img" src="./corporate-background.png" alt="EAD Soluções Integradas">
-  <div class="hero-content">
-    
-    <h1>SEGURANÇA E<span class="accent">TECNOLOGIA</span></h1>
-    <p class="hero-sub">Segurança significa preservar sua vida e seus negócios</p>
-    <p class="hero-desc">Para isso, usamos tecnologia de ponta e agentes experientes em diferentes frentes de segurança. Proteja o que é seu com quem entende do assunto.</p>
-    <div class="hero-btns" style="margin-bottom:0">
-      <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços →</a>
-      
+
+<header class="hero on-dark" id="inicio">
+  <div class="wrap">
+    <img src="logo-ead-web.png" alt="Logo EAD Soluções Integradas" width="160" height="112" style="height:112px;width:auto;margin-bottom:28px">
+    <p class="eyebrow">Portaria · Recepção · Limpeza</p>
+    <h1>Portaria de obra com equipe própria, uniformizada e supervisionada.</h1>
+    <p class="lead">A EAD Soluções Integradas cuida da porta de entrada da sua obra, com recepção e limpeza (inclusive pós-obra) no mesmo contrato. Atendemos construtoras, incorporadoras, empresas e condomínios.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5511927415146?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20com%20a%20EAD." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn ghost" href="#portaria">Conhecer o serviço</a>
     </div>
-    <div class="hero-meta" style="display:none">
-      <div class="hero-meta-item">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        (11) 99320-5614
-      </div>
-      <a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5" target="_blank" class="hero-meta-item" style="color:var(--muted);text-decoration:none">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        @eadsi_
-      </a>
+    <div class="chips">
+      <span class="chip">Escala 12x36, dia e noite</span>
+      <span class="chip">4 câmeras, DVR e alarme de bônus</span>
+      <span class="chip">Documentação mensal da equipe</span>
+      <span class="chip">Jandira e Grande São Paulo</span>
+    </div>
+  </div>
+</header>
+
+<section id="quem">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Quem somos</p>
+      <h2>Terceirização para quem constrói e administra.</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>Para quem</h3><p>Construtoras, incorporadoras, empresas e condomínios.</p></div>
+      <div class="card"><h3>Onde</h3><p>Escritório em Jandira/SP. Atendemos a Grande São Paulo, a capital e o interior.</p></div>
+      <div class="card"><h3>Como</h3><p>Equipe própria, gestão próxima e um único contrato para vários serviços.</p></div>
     </div>
   </div>
 </section>
-<div class="pillars-bar">
-  <div class="pillars-bar-inner">
-    <div class="pbar-item"><span class="pbar-icon">📅</span><div class="pbar-title" style="color:#1a6bff">10+ Anos</div><div class="pbar-sub">de Experiência</div></div>
-    <div class="pbar-item"><span class="pbar-icon">👥</span><div class="pbar-title">Clientes Satisfeitos</div><div class="pbar-sub">Nossa prioridade é sua satisfação</div></div>
-    <div class="pbar-item"><span class="pbar-icon">👮</span><div class="pbar-title">Profissionais Preparados</div><div class="pbar-sub">Equipe treinada e comprometida</div></div>
-    <div class="pbar-item"><span class="pbar-icon">🕐</span><div class="pbar-title">Monitoramento 24/7</div><div class="pbar-sub">Segurança contínua, sem pausas</div></div>
+
+<section id="portaria" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Nosso carro-chefe</p>
+      <h2>A portaria é a porta de entrada da sua obra.</h2>
+      <p>Quem entra, o que chega e o que sai passam por ela. Por isso tratamos a portaria como posto fixo, com gente preparada e acompanhamento todos os dias.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Controle de acesso</h3><p>Registro de funcionários, prestadores, visitantes e veículos.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></svg></div><h3>Recebimento</h3><p>Entregas, materiais e encomendas ficam com a portaria até a equipe da obra chegar.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Escala 12x36, dia e noite</h3><p>Diurno das 7h às 19h e noturno das 19h às 7h.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div><h3>Registro de ocorrências</h3><p>O que acontece no posto é anotado e comunicado ao cliente.</p></div>
+    </div>
   </div>
-</div>
-<div class="sobre" id="sobre">
-  <div class="sobre-inner">
-    <div class="sobre-img-wrap">
-      <div class="sobre-img-frame">
-        <img src="./resultados.png" alt="EAD Soluções Integradas">
-      </div>
+</section>
+
+<section class="bonus on-dark">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow">Bônus EAD na portaria</p>
+      <p class="big">4</p>
+      <h2>câmeras, DVR e alarme</h2>
     </div>
     <div>
-      <div class="section-tag">Quem Somos</div>
-      <h2 class="section-title">EAD <span class="accent">Soluções Integradas</span></h2>
-      <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px">A EAD é uma empresa renomada no segmento de terceirização, especializada em áreas como Segurança Eletrônica, CFTV Digital, Portarias e Limpeza. Nossa equipe é formada por profissionais altamente qualificados, comprometidos em oferecer soluções eficientes e confiáveis.</p>
-      <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px">Com anos de experiência no mercado, a EAD Soluções Integradas foi fundada com um propósito claro: não ser apenas mais uma empresa, mas a maior referência na área. Acreditamos que ninguém tem a chance de viver duas vezes para fazer diferente, por isso, escolhemos fazer o melhor sempre.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px">
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Monitoramento 24h</div><div style="font-size:12px;color:var(--muted)">Central própria para vigilância contínua e resposta imediata.</div></div>
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Deslocamento Móvel</div><div style="font-size:12px;color:var(--muted)">Unidades equipadas para atender com agilidade e eficiência.</div></div>
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Prevenção Ativa</div><div style="font-size:12px;color:var(--muted)">Monitoramento de imagens que reforça a segurança.</div></div>
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px"><svg style="color:var(--blue);width:20px;height:20px;margin-bottom:8px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div style="font-size:13px;font-weight:700;margin-bottom:4px">Manutenção Especializada</div><div style="font-size:12px;color:var(--muted)">Profissionais prontos para garantir o pleno funcionamento.</div></div>
-      </div>
-    </div>
-  </div>
-</div><section class="servicos" id="servicos">
-  <div class="container">
-    <div class="servicos-header">
-      <div class="section-tag">Nossos Serviços</div>
-      <h2 class="section-title">Soluções Completas em <span class="accent">Segurança</span></h2>
-      <p class="section-desc">Oferecemos sistemas avançados de controle de acesso, monitorando a entrada e saída de pessoas e veículos em empresas ou condomínios.</p>
-    </div>
-    <div class="servicos-grid">
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-alarme.png" alt="Monitoramento"><div class="scard-num">1</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Monitoramento de Alarme 24h</h3></div><p>Proteção contínua com resposta rápida para garantir a segurança do seu patrimônio a qualquer hora.</p><div class="scard-tags"><span class="scard-tag">Central própria</span><span class="scard-tag">Resposta imediata</span><span class="scard-tag">Equipe especializada</span></div><button class="scard-link" onclick="openModal('monitoramento')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-cftv.png" alt="CFTV"><div class="scard-num">2</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><h3>CFTV</h3></div><p>Monitoramento inteligente com imagens em tempo real para garantir segurança e controle do ambiente.</p><div class="scard-tags"><span class="scard-tag">Imagens HD</span><span class="scard-tag">Acesso remoto</span><span class="scard-tag">Gravação contínua</span></div><button class="scard-link" onclick="openModal('cftv')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-portaria.png" alt="Portaria"><div class="scard-num">3</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Portaria</h3></div><p>Gestão de acesso com profissionais capacitados e tecnologias avançadas para garantir segurança.</p><div class="scard-tags"><span class="scard-tag">Controle de acesso</span><span class="scard-tag">Registro de visitantes</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portaria')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-pos-obra.png" alt="Pós-Obra"><div class="scard-num">4</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><h3>Pós-Obra</h3></div><p>Serviço especializado em limpeza e organização, deixando o ambiente pronto para uso.</p><div class="scard-tags"><span class="scard-tag">Limpeza profunda</span><span class="scard-tag">Remoção de resíduos</span><span class="scard-tag">Ambiente pronto</span></div><button class="scard-link" onclick="openModal('posobra')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-limpeza.png" alt="Limpeza"><div class="scard-num">5</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg><h3>Limpeza</h3></div><p>Higienização profissional para garantir ambientes limpos, saudáveis e bem cuidados.</p><div class="scard-tags"><span class="scard-tag">Equipe treinada</span><span class="scard-tag">Produtos adequados</span><span class="scard-tag">Rotina flexível</span></div><button class="scard-link" onclick="openModal('limpeza')">Saiba mais →</button></div></div>
-      <div class="scard"><div class="scard-img-wrap"><img class="scard-img" src="./servico-obra-andamento.png" alt="Portaria com Obra"><div class="scard-num">6</div></div><div class="scard-body"><div class="scard-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg><h3>Portaria com Obra em Andamento</h3></div><p>Controle de acesso especializado para canteiros de obras, garantindo segurança e registro completo.</p><div class="scard-tags"><span class="scard-tag">Controle rigoroso</span><span class="scard-tag">Registro de trabalhadores</span><span class="scard-tag">Segurança 24h</span></div><button class="scard-link" onclick="openModal('portariaobra')">Saiba mais →</button></div></div>
-    </div>
-    <div class="servicos-cta"><p>Precisa de uma solução personalizada?</p><a href="#contato" class="btn btn-primary">Fale com um Especialista →</a></div>
-  </div>
-</section>
-<section class="diferenciais">
-  <div class="container">
-    <div class="dif-header"><div class="section-tag">Diferenciais</div><h2 class="section-title">Por Que Escolher a <span class="accent">EAD?</span></h2></div>
-    <div class="dif-grid">
-      <div class="dif-card"><div class="dif-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 6l5.5 5.5L12 6l5.5 5.5L23 6"/><path d="M1 12l5.5 5.5L12 12l5.5 5.5L23 12"/></svg></div><div><h3>Monitoramento 24h</h3><p>Central própria para vigilância contínua e resposta imediata a qualquer incidente.</p></div></div>
-      <div class="dif-card"><div class="dif-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><div><h3>Deslocamento Móvel</h3><p>Unidades equipadas para atender com agilidade e eficiência quando necessário.</p></div></div>
-      <div class="dif-card"><div class="dif-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><div><h3>Prevenção Ativa</h3><p>Monitoramento de imagens que reforça a segurança e minimiza riscos em caso de sinistros.</p></div></div>
-      <div class="dif-card"><div class="dif-icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><div><h3>Manutenção Especializada</h3><p>Profissionais prontos para garantir o pleno funcionamento dos equipamentos.</p></div></div>
-    </div>
-    <div class="dif-footer">Nossos diferenciais nos tornam a escolha ideal para quem busca segurança de verdade.<br>Cada detalhe é pensado para oferecer o melhor serviço aos nossos clientes.</div>
-  </div>
-</section>
-<section class="pilares">
-  <div class="container">
-    <div class="pilares-header"><div class="section-tag">Nossa Fundação</div><h2 class="section-title">Nossos Pilares de <span class="accent">Sucesso</span></h2><p class="section-desc">Fundamentos que guiam nossa excelência e nos mantêm focados em entregar o melhor para nossos clientes.</p></div>
-    <div class="pilares-grid">
-      <div class="pilar-card"><div class="pilar-num">01</div><div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Visão</h3><p>Ser a maior referência em segurança, reconhecida pela excelência, inovação e compromisso em proteger o que realmente importa para nossos clientes.</p></div>
-      <div class="pilar-card"><div class="pilar-num">02</div><div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><h3>Missão</h3><p>Proteger pessoas e negócios com soluções inovadoras, tecnologia de ponta e uma equipe dedicada, garantindo segurança, confiança e tranquilidade.</p></div>
-      <div class="pilar-card"><div class="pilar-num">03</div><div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><h3>Valores</h3><p>Excelência, Inovação, Confiança, Compromisso e Respeito. São esses valores que guiam cada ação da nossa empresa.</p></div>
-      <div class="pilar-card"><div class="pilar-num">04</div><div class="pilar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 6 2 12 8 18"/><line x1="2" y1="12" x2="15" y2="12"/><path d="M15 6h5a2 2 0 012 2v8a2 2 0 01-2 2h-5"/></svg></div><h3>Grandeza</h3><p>Alcançar excelência e liderança no setor, sendo reconhecida pela inovação, qualidade e impacto positivo na vida de nossos clientes.</p></div>
+      <p style="font-size:20px">No contrato de portaria, a EAD instala no início da obra:</p>
+      <ul>
+        <li><b>4 câmeras</b> nos pontos de acesso</li>
+        <li><b>DVR</b> com as imagens gravadas</li>
+        <li><b>Alarme</b> para o canteiro</li>
+      </ul>
+      <small>Sem custo à parte: faz parte da instalação inicial do posto.</small>
     </div>
   </div>
 </section>
-<div class="quote-section"><div class="quote-inner"><div class="quote-mark">"</div><blockquote>Ninguém tem a chance de viver duas vezes para fazer diferente, por isso, escolhemos fazer o melhor sempre.</blockquote></div></div><section class="contato" id="contato">
-  <div class="container">
-    <div class="contato-header"><div class="section-tag">Contato</div><h2 class="section-title">Entre em <span class="accent">Contato</span></h2><p class="section-desc">Estamos prontos para proteger o que é seu. Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p></div>
-    <div class="contato-grid">
-      <div>
-        <div class="contact-info-grid">
-          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Telefone</div><div class="ccard-value">(11) 99429-3041</div></div>
-          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Endereço</div><div class="ccard-value">Av. Carmine Gragnano, 150 - Centro, Jandira SP</div></div>
-          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</div><div class="ccard-value"><a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5" target="_blank" style="color:#fff">@eadsi_</a></div></div>
-          <div class="ccard"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</div><div class="ccard-value">contato@eadseguranca.com.br</div></div>
-          <div class="ccard ccard-full"><div class="ccard-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Horário</div><div class="ccard-value">Atendimento 24 horas</div></div>
-        </div>
-        <a href="https://maps.google.com/?q=Av.+Carmine+Gragnano,+150,+Jandira,+SP" target="_blank" class="map-link">📍 Ver no Google Maps</a>
-      </div>
-      <div class="form-box">
-        <h3>Envie uma mensagem</h3>
-        <div class="form-row">
-          <div class="fg"><label>Nome</label><input id="f-nome" type="text" placeholder="Seu nome"></div>
-          <div class="fg"><label>Email</label><input id="f-email" type="email" placeholder="seu@email.com"></div>
-        </div>
-        <div class="fg"><label>Telefone</label><input id="f-tel" type="tel" placeholder="(11) 99999-9999"></div>
-        <div class="fg"><label>Mensagem</label><textarea id="f-msg" placeholder="Como podemos ajudar?"></textarea></div>
-        <button class="btn-submit" onclick="enviarFormulario()">Enviar Mensagem <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
-      </div>
+
+<section id="como">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Como trabalhamos</p>
+      <h2>Do primeiro dia ao fim da obra</h2>
+    </div>
+    <div class="grid g4">
+      <div class="card step"><p class="n">01</p><h3>Visita e escala</h3><p>Conhecemos a obra e montamos a escala do posto.</p></div>
+      <div class="card step"><p class="n">02</p><h3>Equipe no posto</h3><p>Profissionais selecionados e uniformizados.</p></div>
+      <div class="card step"><p class="n">03</p><h3>Check-in diário</h3><p>Cada porteiro confirma a chegada no grupo do posto, todo dia.</p></div>
+      <div class="card step"><p class="n">04</p><h3>Supervisão</h3><p>Acompanhamento do posto e cobertura de faltas com equipe reserva.</p></div>
     </div>
   </div>
 </section>
-<div class="footer">
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-brand-logo">
-        <img src="./logo-ead.png" alt="EAD" style="height:48px;width:auto">
-        <div><div class="l1">EAD</div><div class="l2">Soluções Integradas</div></div>
-      </div>
-      <div class="footer-divider"></div>
-      <p>Segurança significa preservar sua vida e seus negócios. Tecnologia de ponta e agentes experientes.</p>
-      <div class="socials">
-        <a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5" class="social-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="mailto:contato@eadseguranca.com.br" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-        <a href="tel:11994293041" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
-      </div>
+
+<section class="alt">
+  <div class="wrap two">
+    <div class="head" style="margin-bottom:0">
+      <p class="eyebrow">Transparência</p>
+      <h2>Todo mês, a documentação da equipe na sua mão.</h2>
+      <p>A terceirizada responde junto com o tomador. Por isso mostramos que está tudo em dia.</p>
     </div>
-    <div class="footer-col"><h4>Navegação</h4><ul><li><a href="#inicio">Home</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#contato">Contato</a></li></ul></div>
-    <div class="footer-col"><h4>Serviços</h4><ul><li><a href="#servicos">Monitoramento 24h</a></li><li><a href="#servicos">CFTV</a></li><li><a href="#servicos">Portaria</a></li><li><a href="#servicos">Pós-Obra</a></li><li><a href="#servicos">Limpeza</a></li></ul></div>
-    <div class="footer-col"><h4>Contato</h4><ul><li><a href="tel:11994293041">(11) 99429-3041</a></li><li><a href="#">Av. Carmine Gragnano, 150</a></li><li><a href="#">Centro - Jandira, SP</a></li><li><a href="https://www.instagram.com/eadsi_?igsh=NGJyeWI3OXE2dTZ5" target="_blank">@eadsi_</a></li></ul></div>
+    <div class="checks">
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>Holerites dos colaboradores do posto</div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>FGTS com o detalhe por obra</div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>INSS e DCTFWeb do mês</div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>Folhas de ponto assinadas</div>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2026 EAD Soluções Integradas. Todos os direitos reservados. &nbsp;&nbsp; <span style="font-size:15px;opacity:1">Feito por Welington Fagundes <a href="https://instagram.com/welingtonfag" target="_blank" style="color:inherit">@welingtonfag</a></span></p><div class="footer-bottom-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div></div>
-</div>
-<script>
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
-function enviarFormulario(){
-  const nome=document.getElementById('f-nome').value;
-  const email=document.getElementById('f-email').value;
-  const tel=document.getElementById('f-tel').value;
-  const msg=document.getElementById('f-msg').value;
-  if(!nome||!msg){alert('Preencha pelo menos o nome e a mensagem.');return;}
-  const texto=`Olá! Vim pelo site da EAD Soluções Integradas.%0A%0ANome: ${encodeURIComponent(nome)}%0AEmail: ${encodeURIComponent(email)}%0ATelefone: ${encodeURIComponent(tel)}%0AMensagem: ${encodeURIComponent(msg)}`;
-  window.open(`https://wa.me/5511994293041?text=${texto}`,'_blank');
-window.location.href=`mailto:contato@eadseguranca.com.br?subject=Contato pelo site - ${encodeURIComponent(nome)}&body=${texto.replace(/%0A/g,'%0D%0A')}`;
-}
-const modalData={
-  monitoramento:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',title:'Monitoramento de Alarme 24h',body:'<p>Nossa central de monitoramento opera 24 horas por dia, 7 dias por semana, garantindo vigilância contínua do seu patrimônio. Com tecnologia de ponta e equipe altamente treinada, respondemos a qualquer ocorrência de forma imediata.</p><p>Ao detectar qualquer anomalia, nossa equipe aciona os protocolos de segurança e, quando necessário, entra em contato com as autoridades competentes e com o cliente.</p>',tags:['Central própria','Resposta imediata','Equipe 24h','Tecnologia avançada','Protocolo de emergência']},
-  cftv:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>',title:'CFTV Digital',body:'<p>Instalamos e gerenciamos sistemas completos de Circuito Fechado de TV Digital, com câmeras de alta resolução que garantem imagens nítidas dia e noite, em qualquer condição climática.</p><p>Nosso sistema permite acesso remoto em tempo real pelo celular ou computador, gravação contínua em nuvem e alertas automáticos de movimento suspeito.</p>',tags:['Câmeras HD','Acesso remoto','Gravação em nuvem','Visão noturna','Alertas automáticos']},
-  portaria:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',title:'Portaria',body:'<p>Disponibilizamos profissionais capacitados e treinados para gerenciar o acesso em condomínios residenciais, comerciais e empresas. Nossos porteiros seguem protocolos rigorosos de segurança.</p><p>Utilizamos sistemas modernos de controle de acesso, registro de visitantes e integração com câmeras para garantir total segurança nas entradas e saídas.</p>',tags:['Controle de acesso','Registro de visitantes','Profissionais treinados','Integração com CFTV','Segurança 24h']},
-  posobra:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>',title:'Pós-Obra',body:'<p>Serviço especializado de limpeza e organização após obras e reformas. Nossa equipe remove todo o entulho, poeira e resíduos, deixando o ambiente completamente limpo e pronto para uso.</p><p>Realizamos limpeza profunda de pisos, paredes, vidros e instalações, com produtos adequados para cada tipo de superfície, garantindo resultado impecável.</p>',tags:['Limpeza profunda','Remoção de entulho','Polimento de pisos','Limpeza de vidros','Ambiente pronto']},
-  limpeza:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>',title:'Limpeza',body:'<p>Oferecemos serviços de higienização profissional para empresas, condomínios e estabelecimentos comerciais. Nossa equipe utiliza produtos de qualidade e equipamentos modernos para garantir ambientes sempre limpos e saudáveis.</p><p>Trabalhamos com cronogramas flexíveis, diário, semanal ou mensal, adaptando-nos à necessidade de cada cliente.</p>',tags:['Equipe treinada','Produtos certificados','Rotina flexível','Higienização completa','Equipamentos modernos']},
-  portariaobra:{icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>',title:'Portaria com Obra em Andamento',body:'<p>Serviço especializado para canteiros de obras, garantindo controle rigoroso de entrada e saída de trabalhadores, visitantes e materiais. Nossos profissionais são treinados para atuar em ambientes de construção.</p><p>Realizamos registro completo de todos os acessos, verificação de credenciais, controle de equipamentos e garantimos a segurança do perímetro durante toda a obra.</p>',tags:['Controle rigoroso','Registro completo','Verificação de credenciais','Segurança do perímetro','Relatórios diários']}
-};
-function openModal(key){const d=modalData[key];document.getElementById('modal-icon').innerHTML=d.icon;document.getElementById('modal-title').textContent=d.title;document.getElementById('modal-body').innerHTML=d.body;document.getElementById('modal-tags').innerHTML=d.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('');document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
-function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
-</script>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">No mesmo contrato</p>
+      <h2>Recepção e limpeza, quando a obra pedir</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Recepção</h3><p>Stands de vendas e escritórios: atendimento a compradores e visitantes, com equipe uniformizada e o espaço sempre em ordem.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div><h3>Limpeza</h3><p>Conservação de áreas comuns e escritórios, e limpeza pós-obra (grossa e fina) para a entrega das chaves.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Por que a EAD</p>
+      <h2>O que muda para o seu posto</h2>
+    </div>
+    <table class="cmp">
+      <tr><th>Tema</th><th>Modelo comum</th><th>Com a EAD</th></tr>
+      <tr><td>Fornecedores</td><td>Um para cada serviço</td><td>Portaria, recepção e limpeza no mesmo contrato</td></tr>
+      <tr><td>Atendimento</td><td>Central e protocolo</td><td>Contato direto com a gestão</td></tr>
+      <tr><td>Câmeras</td><td>Cobradas à parte</td><td>4 câmeras, DVR e alarme de bônus</td></tr>
+      <tr><td>Documentação</td><td>Só quando o cliente cobra</td><td>Todo mês, por obra</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contato" class="contact on-dark">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Contato</p>
+      <h2 style="margin-top:12px">Vamos cuidar da portaria da sua obra?</h2>
+      <p class="lead">Fale com a gente e receba uma proposta para o seu posto.</p>
+      <a class="btn" href="https://wa.me/5511927415146?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20com%20a%20EAD." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+    </div>
+    <div class="clist">
+      <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div><span>WhatsApp</span><a href="https://wa.me/5511927415146" target="_blank" rel="noopener">(11) 92741-5146</a></div></div>
+      <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg><div><span>E-mail</span><a href="mailto:comercial@eadsolucoesintegradas.com.br">comercial@eadsolucoesintegradas.com.br</a></div></div>
+      <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg><div><span>Instagram</span><a href="https://www.instagram.com/eadsi_/" target="_blank" rel="noopener">@eadsi_</a></div></div>
+      <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><span>Escritório</span>Av. Carmine Gragnano, 48 – Sala 10 – Centro – Jandira/SP – CEP 06600-010</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 EAD Soluções Integradas Ltda · CNPJ 65.053.848/0001-24</span>
+    <span>Portaria · Recepção · Limpeza</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511927415146" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.94-11.93a11.85 11.85 0 0 0-3.47-8.42zM12.05 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.97 1-3.62-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.46 4.45-9.9 9.92-9.9a9.86 9.86 0 0 1 9.9 9.91c0 5.47-4.45 9.91-9.94 9.91zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></a>
+
 </body>
 </html>
