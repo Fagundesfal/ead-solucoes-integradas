@@ -1,7 +1,7 @@
 # Gera as páginas de serviço do site (SEO). Rodar: python3 tools/gerar_paginas.py
 import json, os, html
 
-BASE = "https://www.eadsolucoesintegradas.com.br"
+BASE = "https://eadsolucoesintegradas.com.br"
 WA = "https://wa.me/5511927415146?text="
 CIDADES = ["Jandira", "Barueri", "Carapicuíba", "Osasco", "Itapevi", "Cotia", "Santana de Parnaíba", "São Paulo (capital)"]
 
